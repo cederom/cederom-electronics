@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BSD235C
+D Infineon's OptiMOS Complementary P+N Small Signal Transistor Enhanced Super Logic 2.5V Avalanche Rated.
+K OptiMOS MOSFET complementary nmos pmos enchanced avalanche AEC Q101 super logic
+F https://www.infineon.com/cms/en/product/power/mosfet/20v-60v-complementary-mosfet/bsd235c/
+$ENDCMP
+#
+#End Doc Library

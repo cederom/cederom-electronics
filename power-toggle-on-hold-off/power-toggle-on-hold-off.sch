@@ -1,0 +1,273 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 5039 4252
+encoding utf-8
+Sheet 1 1
+Title "CeDeROM POWER BUTTON TOGGLE ON HOLD OFF TEST"
+Date "2020-08-27"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power-toggle-on-hold-off-rescue:BSD235C-local U1
+U 1 1 5F487CC6
+P 2750 1150
+F 0 "U1" H 2900 800 50  0000 C CNN
+F 1 "BSD235C" H 2750 1500 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 2750 1150 50  0001 C CNN
+F 3 "https://www.infineon.com/cms/en/product/power/mosfet/20v-60v-complementary-mosfet/bsd235c/" H 2750 1150 50  0001 C CNN
+	1    2750 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F489246
+P 1750 1150
+F 0 "R1" H 1800 1250 50  0000 L CNN
+F 1 "10K" V 1750 1100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1680 1150 50  0001 C CNN
+F 3 "~" H 1750 1150 50  0001 C CNN
+	1    1750 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F48ABB9
+P 1750 1950
+F 0 "C1" H 1800 2050 50  0000 L CNN
+F 1 "10uF" H 1800 1850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1788 1800 50  0001 C CNN
+F 3 "~" H 1750 1950 50  0001 C CNN
+	1    1750 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F48CB03
+P 2100 1750
+F 0 "SW1" H 2200 1850 50  0000 C CNN
+F 1 "POWER" H 2100 1700 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 2100 1950 50  0001 C CNN
+F 3 "~" H 2100 1950 50  0001 C CNN
+	1    2100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 5F48D484
+P 1750 900
+F 0 "#PWR0101" H 1750 750 50  0001 C CNN
+F 1 "VCC" H 1800 1100 50  0000 C CNN
+F 2 "" H 1750 900 50  0001 C CNN
+F 3 "" H 1750 900 50  0001 C CNN
+	1    1750 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F48D7F0
+P 1750 2200
+F 0 "#PWR0102" H 1750 1950 50  0001 C CNN
+F 1 "GND" H 1800 2000 50  0000 C CNN
+F 2 "" H 1750 2200 50  0001 C CNN
+F 3 "" H 1750 2200 50  0001 C CNN
+	1    1750 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F493C72
+P 1750 1550
+F 0 "R2" H 1800 1650 50  0000 L CNN
+F 1 "1M" V 1750 1450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1680 1550 50  0001 C CNN
+F 3 "~" H 1750 1550 50  0001 C CNN
+	1    1750 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F496082
+P 3300 1150
+F 0 "R3" H 3350 1250 50  0000 L CNN
+F 1 "10K" V 3300 1100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3230 1150 50  0001 C CNN
+F 3 "~" H 3300 1150 50  0001 C CNN
+	1    3300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F4963AF
+P 3600 1150
+F 0 "R4" H 3700 1200 50  0000 L CNN
+F 1 "220R" H 3700 1150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3530 1150 50  0001 C CNN
+F 3 "~" H 3600 1150 50  0001 C CNN
+	1    3600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CeDeROM_Device:LED D1
+U 1 1 5F496701
+P 3600 1500
+F 0 "D1" V 3650 1350 50  0000 R CNN
+F 1 "LED" V 3550 1350 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 1500 50  0001 C CNN
+F 3 "~" H 3600 1500 50  0001 C CNN
+	1    3600 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F49759B
+P 2050 900
+F 0 "TP1" H 2150 1050 50  0000 L CNN
+F 1 "VCC" H 2150 950 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2250 900 50  0001 C CNN
+F 3 "~" H 2250 900 50  0001 C CNN
+	1    2050 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5F4987EF
+P 1150 1450
+F 0 "J1" H 1050 1100 50  0000 C CNN
+F 1 "VIN" H 1050 1200 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1150 1450 50  0001 C CNN
+F 3 "~" H 1150 1450 50  0001 C CNN
+	1    1150 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 950  2050 950 
+Wire Wire Line
+	1750 950  1750 900 
+Wire Wire Line
+	1750 950  1750 1000
+Connection ~ 1750 950 
+Wire Wire Line
+	1750 1300 1750 1350
+Wire Wire Line
+	1750 1700 1750 1750
+Wire Wire Line
+	1900 1750 1750 1750
+Connection ~ 1750 1750
+Wire Wire Line
+	1750 1750 1750 1800
+Wire Wire Line
+	2450 1350 2350 1350
+Wire Wire Line
+	2350 1350 2350 1150
+Wire Wire Line
+	2350 1150 2450 1150
+Wire Wire Line
+	1750 1350 2350 1350
+Connection ~ 1750 1350
+Wire Wire Line
+	1750 1350 1750 1400
+Connection ~ 2350 1350
+Wire Wire Line
+	1750 2100 1750 2150
+Wire Wire Line
+	1750 2150 3100 2150
+Wire Wire Line
+	3600 2150 3600 1650
+Wire Wire Line
+	3600 1350 3600 1300
+Wire Wire Line
+	3600 1000 3600 950 
+Wire Wire Line
+	3600 950  3300 950 
+Wire Wire Line
+	3300 1000 3300 950 
+Connection ~ 3300 950 
+Wire Wire Line
+	3300 950  3050 950 
+Wire Wire Line
+	2300 1750 3300 1750
+Wire Wire Line
+	3300 1750 3300 1350
+Wire Wire Line
+	3050 1350 3100 1350
+Wire Wire Line
+	3100 1350 3100 2150
+Connection ~ 3100 2150
+Wire Wire Line
+	3100 2150 3600 2150
+Wire Wire Line
+	3050 1150 3200 1150
+Wire Wire Line
+	3200 1150 3200 1350
+Wire Wire Line
+	3200 1350 3300 1350
+Connection ~ 3300 1350
+Wire Wire Line
+	3300 1350 3300 1300
+Wire Wire Line
+	1750 2200 1750 2150
+Connection ~ 1750 2150
+Wire Wire Line
+	1350 1350 1400 1350
+Wire Wire Line
+	1400 1350 1400 950 
+Wire Wire Line
+	1400 950  1750 950 
+Wire Wire Line
+	1350 1450 1400 1450
+Wire Wire Line
+	1400 1450 1400 2150
+Wire Wire Line
+	1400 2150 1750 2150
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F4A0BF3
+P 1650 1750
+F 0 "TP2" V 1750 1900 50  0000 C CNN
+F 1 "VCAP" V 1550 1850 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 1850 1750 50  0001 C CNN
+F 3 "~" H 1850 1750 50  0001 C CNN
+	1    1650 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5F4A18ED
+P 3300 1800
+F 0 "TP3" H 3250 1900 50  0000 R CNN
+F 1 "BUTTON" H 3350 2000 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3500 1800 50  0001 C CNN
+F 3 "~" H 3500 1800 50  0001 C CNN
+	1    3300 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 1750 1750 1750
+Wire Wire Line
+	3300 1800 3300 1750
+Connection ~ 3300 1750
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5F4A30B0
+P 3300 900
+F 0 "TP4" H 3400 1050 50  0000 L CNN
+F 1 "VOUT" H 3400 950 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3500 900 50  0001 C CNN
+F 3 "~" H 3500 900 50  0001 C CNN
+	1    3300 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 900  2050 950 
+Connection ~ 2050 950 
+Wire Wire Line
+	2050 950  1750 950 
+Wire Wire Line
+	3300 900  3300 950 
+$EndSCHEMATC
