@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP A2235-H
-D Lantronix GPS receiver using SiRFstarIV technology with integrated antena.
-K gps, receiver, integrated, antena
-F https://cdn.lantronix.com/wp-content/uploads/pdf/A2235-H-UG.pdf
-$ENDCMP
-#
-#End Doc Library

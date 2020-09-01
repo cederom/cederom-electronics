@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP BMP388
-D Absolute Barometric Pressure and Temperature Sensor, LGA-10
-K I2C, SPI, pressure, temperature, sensor, bosch
-F https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp388-ds001.pdf
-$ENDCMP
-#
-#End Doc Library
